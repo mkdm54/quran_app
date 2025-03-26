@@ -1,9 +1,10 @@
 import { Text, View, StyleSheet } from "react-native";
+import SurahCard from "@/components/SurahCard";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <SurahCard />
     </View>
   );
 }
