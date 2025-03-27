@@ -25,7 +25,7 @@ export default function Index() {
       if (data) {
         setDataSurah(data);
       }
-      setLoading(true);
+      setLoading(false);
     }
     fecthData();
   }, []);
