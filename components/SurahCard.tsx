@@ -10,15 +10,17 @@ interface propsSurah {
 const SurahCard = ({ surah_number, name, latin_name, number_of_verses }: propsSurah) => {
     return (
         <Pressable style={styles.card}>
-            <Text style={styles.text}>
-                test
-            </Text>
+            <Text style={styles.text}>{surah_number}</Text>
+            <Text style={styles.text}>{name}</Text>
+            <Text style={styles.text}>{latin_name}</Text>
+            <Text style={styles.text}>Jumlah ayat : {number_of_verses}</Text>
         </Pressable>
     )
 }
 
 const styles = StyleSheet.create({
     card: {
+        width : "100%",
         backgroundColor: "#fff",
         padding: 16,
         borderRadius: 8,
