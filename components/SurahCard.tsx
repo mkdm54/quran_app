@@ -1,6 +1,13 @@
 import { Pressable, Text, StyleSheet } from "react-native";
 
-const SurahCard = () => {
+interface propsSurah {
+    surah_number: number,
+    name: string,
+    latin_name: string,
+    number_of_verses: number
+}
+
+const SurahCard = ({ surah_number, name, latin_name, number_of_verses }: propsSurah) => {
     return (
         <Pressable style={styles.card}>
             <Text style={styles.text}>
